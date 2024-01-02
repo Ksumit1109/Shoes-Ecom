@@ -5,6 +5,7 @@ import Meals from './components/Meals/Meals';
 import Cart from './components/Cart/Cart';
 import CartProvider from './store/CartProvider';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import MealFormContainer from './components/Meals/ShoeItemContainer';
 
 
 
@@ -24,7 +25,8 @@ function App() {
       {cartIsShown && <Cart onClose={hideCartHandler} />}
       <Header onShowCart={showCartHandler} />
       <main>
-        <Meals />
+        {/* <Meals /> */}
+        <MealFormContainer />
       </main>
     </CartProvider>
   );
